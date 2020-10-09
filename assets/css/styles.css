@@ -139,8 +139,22 @@ body {
   background-color: var(--primary-light);
 }
 
+
 .footer {
   border: 1px solid fuchsia;
-
+  
   grid-area: footer;
 }
+
+.footer .site_map {
+  border: 1px solid darkblue;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--neutro-light);
+}
+
+.footer .site_map .site_map__sections {
+  width: 100%;
+  list-style-type: none;
+}
+
