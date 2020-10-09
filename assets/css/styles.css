@@ -1,4 +1,31 @@
 body {
-  background-color: red;
   border: 1px solid blue;
+}
+
+.main-shelf {
+  border: 1px solid blueviolet;
+
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(2, 50%);
+  grid-template-areas: "header header"
+                       "content-shelf content-shelf"
+                       "footer footer";
+}
+
+.header {
+  border: 1px solid coral;
+
+  grid-area: header;
+}
+
+.content-shelf {
+  border: 1px solid greenyellow;
+
+  grid-area: content-shelf;
+}
+
+.footer {
+  border: 1px solid fuchsia;
+
+  grid-area: footer;
 }
