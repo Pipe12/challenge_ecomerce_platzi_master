@@ -1,0 +1,35 @@
+@media only screen and (min-width: 767px) {
+  .header, .content_shelf, .footer {
+    padding: 0 4em 0 4em;
+  }
+
+  .content_shelf .products .products_grid{
+    grid-template: 1fr / repeat(3, 1fr);
+  }
+
+  .footer .site_map .site_map__sections {
+    width: 50%;
+  }
+
+  .modal__info {
+    grid-template: auto / repeat(2, 1fr);
+    max-width: 800px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal__texts {
+    padding-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .content_shelf .products .products_grid{
+    grid-template: 1fr / repeat(4, 1fr);
+  }
+
+  .footer .site_map .site_map__sections {
+    width: 25%;
+  }
+}

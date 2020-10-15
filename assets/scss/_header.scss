@@ -1,0 +1,32 @@
+.header { grid-area: header; }
+
+.header .nav {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav .nav__left { height: fit-content; }
+
+.header .nav .nav__right {
+  display: grid;
+  grid-template-columns: repeat(3);
+  grid-auto-flow: column;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.nav__right .nav__link {
+  text-decoration: none;
+  color: var(--neutro-dark);
+}
+
+.nav__right .nav__link:hover {
+  color: var(--primary);
+}
+
+.nav__right .nav__link img {
+  width: 1.5em;
+  height: 1.5em;
+}
