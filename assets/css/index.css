@@ -22,6 +22,15 @@ body {
   grid-template: repeat(3, auto)/repeat(2, 50%);
   grid-template-areas: "header header" "content-shelf content-shelf" "footer footer"; }
 
+.header {
+  grid-area: header; }
+
+.content_shelf {
+  grid-area: content-shelf; }
+
+.footer {
+  grid-area: footer; }
+
 .header, .content_shelf, .footer {
   padding: 0 2em 0 2em; }
 
@@ -100,9 +109,6 @@ body {
   width: 60px;
   margin-right: 1em; }
 
-.header {
-  grid-area: header; }
-
 .header .nav {
   padding: 50px 0 50px 0;
   display: flex;
@@ -130,9 +136,6 @@ body {
   width: 1.5em;
   height: 1.5em; }
 
-.content_shelf {
-  grid-area: content-shelf; }
-
 .content_shelf .products h1 {
   text-align: center; }
 
@@ -159,9 +162,6 @@ body {
 .products .products_controls {
   padding: 75px 0 75px 0;
   text-align: center; }
-
-.footer {
-  grid-area: footer; }
 
 .footer .site_map {
   display: flex;

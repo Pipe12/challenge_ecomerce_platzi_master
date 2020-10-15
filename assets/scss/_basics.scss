@@ -26,6 +26,12 @@ body {
                        "footer footer";
 }
 
+.header { grid-area: header; }
+
+.content_shelf { grid-area: content-shelf; }
+
+.footer { grid-area: footer; }
+
 .header, .content_shelf, .footer { padding: 0 2em 0 2em; }
 
 .hidden {
