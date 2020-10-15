@@ -1,0 +1,15 @@
+@media only screen and (min-width: 767px) {
+  .header, .content_shelf, .footer {
+    padding: 0 4em 0 4em;
+  }
+
+  .footer .site_map .site_map__sections {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .footer .site_map .site_map__sections {
+    width: 25%;
+  }
+}

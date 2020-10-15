@@ -3,83 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Store</title>
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Shopping cart</title>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/cart.css">
 </head>
 <body>
   <div class="main-shelf">
     <header class="header">
       <nav class="nav">
         <nav class="nav__left">
-          <a href="#">
+          <a href="./index.html">
             <img src="assets/images/minera-logo.png" alt="Minera logo">
           </a>
         </nav>
         <nav class="nav__right">
-          <a href="#" class="nav__link">Home</a>
-          <a href="#" class="nav__link">About Us</a>
-          <a href="./cart.html" class="nav__link">
+          <a href="" class="nav__link">Home</a>
+          <a href="" class="nav__link">About Us</a>
+          <a href="" class="nav__link">
             <img src="./assets/images/shopping-cart.png" alt="shopping-cart.png">
           </a>
         </nav>
       </nav>
     </header>
     <main class="content_shelf">
-
-      <div id="modal" class="modal hidden">
-        <div class="modal__info">
-          <button class="btn__close">X</button>
-          <figure class="modal__image">
-            <img src="./assets/images/product_1.jpg" alt="Product name">
-          </figure>
-          <div class="modal__texts">
-            <h4 class="modal__title">Basic Sweater</h4>
-            <p class="modal__price">$35.00</p>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit...</p>
-            <form action="" class="modal__form">
-              <input type="text" name="quantity" value="1">
-              <button class="btn btn--dark">Add to cart</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <section class="products">
-        <h1 >Productos</h1>
-        <div class="products_grid">
-          <a href="#">
-            <div class="product_card">
-              <img class="product_card__image" src="assets/images/product_1.jpg" alt="Product name">
-              <div class="product_card__info">
-                <h4 class="product_card__name">Basic Sweater</h4>
-                <p class="product_card__price">$35.00</p>
-              </div>
+      <h1>Your cart</h1>
+      <table class="cart">
+        <tr class="cart__header cart__row">
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr class="cart__row"> 
+          <td class="product">
+            <figure class="product__img">
+              <img src="./assets/images/product_1.jpg" alt="Product name">
+            </figure>
+            <div class="product__info">
+              <p class="product__title">Basic sweater</p>
+              <button class="btn">Remove</button>
             </div>
-          </a>
-          <a href="#" class="product_card">
-            <img class="product_card__image" src="assets/images/product_1.jpg" alt="Product name">
-            <div class="product_card__info">
-              <h4 class="product_card__name">Basic Sweater</h4>
-              <p class="product_card__price">$35.00</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="product_card">
-              <img class="product_card__image" src="assets/images/product_1.jpg" alt="Product name">
-              <div class="product_card__info">
-                <h4 class="product_card__name">Basic Sweater</h4>
-                <p class="product_card__price">$35.00</p>
-              </div>
-            </div>
-          </a>
+          </td>
+          <td class="product">
+            <p class="product__price">
+              $35.00
+            </p>
+          </td>
+          <td class="product">
+            <input 
+              class="product__quantity"
+              type="text" 
+              value="1"
+            />
+          </td>
+          <td class="product">
+            <p class="product__total">
+              $35.00
+            </p>
+          </td>
+        </tr>
+      </table>
+      <footer class="cart_footer">
+        <p class="cart_footer__subtotal">
+          <span class="cart_footer__title">Subtotal</span>
+          <span class="cart_footer__price">$70.00</span>
+        </p>
+        <p>Shipping & taxes calculated at checkout</p>
+        <div class="buttons">
+          <button class="btn">CONTINE SHOPPING</button>
+          <button class="btn">UPDATE</button>
+          <button class="btn">CHECK OUT</button>  
         </div>
-        <div class="products_controls">
-          <a class="btn" href="#">
-              Cargar Mas
-          </a>
-        </div>
-      </section>
+      </footer>
     </main>
     <footer class="footer">
       <section class="site_map">
