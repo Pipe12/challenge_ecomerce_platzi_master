@@ -28,6 +28,23 @@ body {
 .hidden {
   display: none; }
 
+.btn {
+  text-decoration: none;
+  color: var(--color-light);
+  background-color: #9F7435;
+  padding: 10px 50px 10px 50px;
+  font-size: 14px;
+  border: none; }
+
+.btn:hover {
+  background-color: var(--primary-light); }
+
+.btn--dark {
+  background-color: var(--neutro-dark); }
+
+.btn--dark:hover {
+  background-color: var(--neutro-medium); }
+
 .modal {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
@@ -142,23 +159,6 @@ body {
 .products .products_controls {
   padding: 75px 0 75px 0;
   text-align: center; }
-
-.btn {
-  text-decoration: none;
-  color: var(--color-light);
-  background-color: #9F7435;
-  padding: 10px 50px 10px 50px;
-  font-size: 14px;
-  border: none; }
-
-.btn:hover {
-  background-color: var(--primary-light); }
-
-.btn--dark {
-  background-color: var(--neutro-dark); }
-
-.btn--dark:hover {
-  background-color: var(--neutro-medium); }
 
 .footer {
   grid-area: footer; }
