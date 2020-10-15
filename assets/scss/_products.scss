@@ -1,6 +1,6 @@
-.content_shelf .products h1 { text-align: center; }
+.products h1 { text-align: center; }
 
-.content_shelf .products .products_grid{
+.products .products_grid{
   display: grid;
   grid-template: 1fr / repeat(2, 1fr);
   gap: 32px 16px;
