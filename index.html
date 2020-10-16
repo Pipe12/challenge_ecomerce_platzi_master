@@ -29,7 +29,7 @@
 
       <div id="modal" class="modal hidden">
         <div class="modal__info">
-          <button class="btn__close">X</button>
+          <button class="btn__close" id="btn_close">X</button>
           <figure class="modal__image">
             <img src="./assets/images/product_1.jpg" alt="Product name">
           </figure>
@@ -48,7 +48,7 @@
       <section class="products">
         <h1 >Productos</h1>
         <div class="products_grid">
-          <a href="#">
+          <a href="#" id="card_one">
             <div class="product_card">
               <img class="product_card__image" src="assets/images/product_1.jpg" alt="Product name">
               <div class="product_card__info">
@@ -57,14 +57,14 @@
               </div>
             </div>
           </a>
-          <a href="#" class="product_card">
+          <a href="#" class="product_card" id="card_two">
             <img class="product_card__image" src="assets/images/product_1.jpg" alt="Product name">
             <div class="product_card__info">
               <h4 class="product_card__name">Basic Sweater</h4>
               <p class="product_card__price">$35.00</p>
             </div>
           </a>
-          <a href="#">
+          <a href="#" id="card_three">
             <div class="product_card">
               <img class="product_card__image" src="assets/images/product_1.jpg" alt="Product name">
               <div class="product_card__info">
@@ -206,5 +206,6 @@
       </section>
     </footer>
   </div> <!-- main-shelf -->
+  <script src="./js/index.js"></script>
 </body>
 </html>
